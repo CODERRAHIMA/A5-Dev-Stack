@@ -1,10 +1,15 @@
 import './App.css'
+import Banner from './components/Banner';
+import Nav from './components/Nav';
+import Technologies from './components/technologies/Technologies';
 
 function App() {
 
   return (
     <>
-      <h2 className='text-5xl text-red-500'>Dev Stack setup</h2>
+      <Nav />
+      <Banner />
+      <Technologies />
     </>
   )
 }
