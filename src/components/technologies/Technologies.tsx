@@ -13,7 +13,7 @@ const Technologies = ({
   const [selectedStack, setSelectedStack] = useState<ITechnologies[]>([]);
 
   return (
-    <div className="max-w-7xl mx-auto space-y-2">
+    <div className="max-w-7xl mx-auto space-y-2 mt-16">
         <h1 className="text-4xl font-bold">Explore the <span className="bg-linear-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">Technologies</span></h1>
         <p className="text-[#64748B] font-jakarta">Pick one technology per category to build your ideal stack.</p>
         
