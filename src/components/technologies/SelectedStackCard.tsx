@@ -14,7 +14,7 @@ const SelectedStackCard = ({technology, selectedStack, setSelectedStack}: ISelec
     const handleRemoveStack = (technology: ITechnologies) => {
         const updatedStack = selectedStack.filter((stack) => stack.name !== technology.name);
         setSelectedStack(updatedStack);
-        toast.info(`${technology.name} removed Successfully!`, {position: "bottom-right"});
+        toast.info(`${technology.name} removed Successfully!`);
     }
     return (
         <div className="flex justify-between items-center border border-gray-300 p-3 rounded-2xl">

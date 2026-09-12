@@ -14,11 +14,11 @@ const TechnologiesCard = ({technology, selectedStack, setSelectedStack}: ITechno
 
     const handleSelectedStack = () => {
         setSelectedStack((stack) => [...stack, technology]);
-        toast.success(`${technology.name} added Successfully!`, {position: "bottom-right"});
+        toast.success(`${technology.name} added Successfully!`);
     };
 
     return (
-            <div className={`flex flex-col h-full space-y-5 rounded-2xl p-4 font-jakarta
+            <div className={`flex flex-col h-full w-[90%] md:w-full space-y-5 rounded-2xl p-4 font-jakarta
                 ${isSelected? "border-2 border-pink-400" : "border border-gray-200 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:border-gray-200"}`}>
                 <div className="flex justify-between items-center">
                     <img src={technology.icon} alt={technology.name} className="w-8.75 h-8.75"/>

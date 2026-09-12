@@ -15,13 +15,13 @@ const SelectedStack = ({
 
   const handleRemoveAll = () => {
     setSelectedStack([]);
-    toast.info("All Stacks are removed Successfully!", {position: "bottom-right"});
+    toast.info("All Stacks are removed Successfully!");
   };
 
   if (selectedStack.length === 0) {
     return (
-      <div>
-        <div className="border border-gray-200 p-6 rounded-2xl space-y-2 font-jakarta">
+      <div className="flex justify-center md:justify-start items-center md:items-start">
+        <div className="w-[90%] md:w-full border border-gray-200 p-6 rounded-2xl space-y-2 font-jakarta">
           <h2 className="font-bold text-xl">Your Stack</h2>
           <p className="text-[#94A3B8] text-sm">
             No technologies selected yet.
@@ -34,8 +34,8 @@ const SelectedStack = ({
     );
   }
   return (
-    <div>
-      <div className="border border-gray-200 p-6 rounded-2xl space-y-2 font-jakarta">
+    <div className="flex justify-center md:justify-start items-center md:items-start">
+      <div className="w-[90%] md:w-full border border-gray-200 p-6 rounded-2xl space-y-2 font-jakarta">
         <h2 className="font-bold text-xl">Your Stack</h2>
         <p className="text-[#94A3B8] text-sm">
           {selectedStack.length} Technology Selected
