@@ -17,7 +17,7 @@ const SelectedStackCard = ({technology, selectedStack, setSelectedStack}: ISelec
     return (
         <div className="flex justify-between items-center border border-gray-300 p-3 rounded-2xl">
             <div className="flex gap-4 items-center">
-                <img src={technology.icon} alt={technology.name} className="w-[35px] h-[35px]"/>
+                <img src={technology.icon} alt={technology.name} className="w-8.75 h-8.75"/>
                 <div>
                     <h2 className="font-bold text-sm">{technology.name}</h2>
                     <p className="text-[10px] text-[#94A3B8]">{technology.category}</p>

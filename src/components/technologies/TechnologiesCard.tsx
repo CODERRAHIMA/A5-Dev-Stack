@@ -1,6 +1,5 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { ITechnologies } from "../../types/Type";
-import { MdDone } from "react-icons/md";
 
 interface ITechnologyProps {
     technology: ITechnologies,
@@ -24,7 +23,7 @@ const TechnologiesCard = ({technology, selectedStack, setSelectedStack}: ITechno
             <div className={`flex flex-col h-full space-y-5 rounded-2xl p-4 font-jakarta
                 ${isSelected? "border-2 border-pink-400" : "border border-gray-200 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:border-gray-200"}`}>
                 <div className="flex justify-between items-center">
-                    <img src={technology.icon} alt={technology.name} className="w-[35px] h-[35px]"/>
+                    <img src={technology.icon} alt={technology.name} className="w-8.75 h-8.75"/>
                     <span className="rounded-lg text-xs px-2 py-1 font-medium" style={{backgroundColor: technology.badgeBg, color: technology.badgeColor}}>
                         {technology.badge}
                     </span>
@@ -39,11 +38,7 @@ const TechnologiesCard = ({technology, selectedStack, setSelectedStack}: ITechno
                     <span className="text-xs font-bold">⭐ {technology.rating}</span>
                 </div>
                 <button onClick={() => handleSelectedStack()} className={`btn rounded-xl cursor-pointer ${isSelected? "bg-purple-100 text-pink-600 font-semibold" : "bg-black text-white font-light" }`} disabled={isSelected}>
-                    {isSelected? (
-                        <>
-                            <MdDone className="text-xl" /> Added to Stack
-                        </>
-                    ) : "Add to Stack"}
+                    {isSelected? "✓ Added to Stack" : "Add to Stack"}
                 </button>
             </div>
     );
