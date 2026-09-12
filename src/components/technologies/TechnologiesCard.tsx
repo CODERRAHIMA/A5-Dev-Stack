@@ -1,4 +1,4 @@
-import { useState, type Dispatch, type SetStateAction } from "react";
+import type { Dispatch, SetStateAction } from "react";
 import type { ITechnologies } from "../../types/Type";
 import { MdDone } from "react-icons/md";
 
@@ -10,12 +10,16 @@ interface ITechnologyProps {
 
 const TechnologiesCard = ({technology, selectedStack, setSelectedStack}: ITechnologyProps) => {
 
-    const [isSelected, setIsSelected] = useState(false);
+    const isSelected = selectedStack.includes(technology);
 
     const handleSelectedStack = () => {
-        setIsSelected(true);
-        setSelectedStack([...selectedStack, technology]);
-    }
+        setSelectedStack((stack) => {
+            if (stack.includes(technology)) {
+                return stack;
+            }
+            return [...stack, technology];
+        });
+    };
     return (
             <div className={`flex flex-col h-full space-y-5 rounded-2xl p-4 font-jakarta
                 ${isSelected? "border-2 border-pink-400" : "border border-gray-200 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:border-gray-200"}`}>

@@ -10,7 +10,7 @@ interface ISelectedStackCardProps {
 
 const SelectedStackCard = ({technology, selectedStack, setSelectedStack}: ISelectedStackCardProps) => {
 
-    const handleRemoveStack = () => {
+    const handleRemoveStack = (technology: ITechnologies) => {
         const updatedStack = selectedStack.filter((stack) => stack.name !== technology.name);
         setSelectedStack(updatedStack);
     }
@@ -23,7 +23,7 @@ const SelectedStackCard = ({technology, selectedStack, setSelectedStack}: ISelec
                     <p className="text-[10px] text-[#94A3B8]">{technology.category}</p>
                 </div>
             </div>
-            <span onClick={handleRemoveStack} className="text-2xl text-gray-400 cursor-pointer">
+            <span onClick={() => handleRemoveStack(technology)} className="text-2xl text-gray-400 cursor-pointer">
                 <RxCross2 />
             </span>
         </div>

@@ -9,8 +9,8 @@ const Nav = () => {
         <img src={Logo} alt="brand-logo" />
 
         <ul className="flex justify-center gap-6 text-[#475569] font-semibold">
-          {navItems.map((item) => (
-            <li className="cursor-pointer hover:text-[#D91B7E]">{item}</li>
+          {navItems.map((item, idx) => (
+            <li key={idx} className="cursor-pointer hover:text-[#D91B7E]">{item}</li>
           ))}
         </ul>
 
