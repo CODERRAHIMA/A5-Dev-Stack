@@ -1,6 +1,7 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { ITechnologies } from "../../types/Type";
 import SelectedStackCard from "./SelectedStackCard";
+import { toast } from "react-toastify";
 
 interface ISelectedStackProps {
   selectedStack: ITechnologies[];
@@ -14,6 +15,7 @@ const SelectedStack = ({
 
   const handleRemoveAll = () => {
     setSelectedStack([]);
+    toast.info("All Stacks are removed Successfully!", {position: "bottom-right"});
   };
 
   if (selectedStack.length === 0) {

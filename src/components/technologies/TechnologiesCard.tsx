@@ -1,5 +1,6 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { ITechnologies } from "../../types/Type";
+import { toast } from "react-toastify";
 
 interface ITechnologyProps {
     technology: ITechnologies,
@@ -12,13 +13,10 @@ const TechnologiesCard = ({technology, selectedStack, setSelectedStack}: ITechno
     const isSelected = selectedStack.includes(technology);
 
     const handleSelectedStack = () => {
-        setSelectedStack((stack) => {
-            if (stack.includes(technology)) {
-                return stack;
-            }
-            return [...stack, technology];
-        });
+        setSelectedStack((stack) => [...stack, technology]);
+        toast.success(`${technology.name} added Successfully!`, {position: "bottom-right"});
     };
+
     return (
             <div className={`flex flex-col h-full space-y-5 rounded-2xl p-4 font-jakarta
                 ${isSelected? "border-2 border-pink-400" : "border border-gray-200 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg hover:border-gray-200"}`}>
@@ -37,7 +35,7 @@ const TechnologiesCard = ({technology, selectedStack, setSelectedStack}: ITechno
                     <span className="text-[#64748B] text-xs font-semibold">{technology.difficulty}</span>
                     <span className="text-xs font-bold">⭐ {technology.rating}</span>
                 </div>
-                <button onClick={() => handleSelectedStack()} className={`btn rounded-xl cursor-pointer ${isSelected? "bg-purple-100 text-pink-600 font-semibold" : "bg-black text-white font-light" }`} disabled={isSelected}>
+                <button onClick={() => handleSelectedStack()} className={`btn rounded-xl cursor-pointer ${isSelected? "bg-purple-100 text-pink-600 font-semibold " : "bg-black text-white font-light" }`} disabled={isSelected}>
                     {isSelected? "✓ Added to Stack" : "Add to Stack"}
                 </button>
             </div>

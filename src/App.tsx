@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import Technologies from './components/technologies/Technologies';
 import type { ITechnologies } from './types/Type';
 import Footer from './components/Footer';
+import { ToastContainer } from 'react-toastify';
 
 const technologiesPromise = async():Promise<ITechnologies[]> => {
   const response = await fetch('/data.json');
@@ -22,6 +23,8 @@ function App() {
         <Technologies technologiesPromise={technologiesPromise()} />
       </Suspense>
       <Footer />
+
+      <ToastContainer />
     </>
   )
 }
