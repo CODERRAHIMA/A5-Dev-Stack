@@ -1,4 +1,4 @@
-import { use } from "react";
+import { use, useState } from "react";
 import type { ITechnologies } from "../../types/Type";
 import TechnologiesCard from "./TechnologiesCard";
 import SelectedStack from "./SelectedStack";
@@ -10,6 +10,8 @@ const Technologies = ({
 }) => {
   const technologies = use(technologiesPromise);
 
+  const [selectedStack, setSelectedStack] = useState<ITechnologies[]>([]);
+
   return (
     <div className="max-w-7xl mx-auto space-y-2">
         <h1 className="text-4xl font-bold">Explore the <span className="bg-linear-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">Technologies</span></h1>
@@ -20,14 +22,14 @@ const Technologies = ({
             <div className="grid col-span-9">
                 <div className="grid grid-cols-3 gap-6">
                     {technologies.map((technology: ITechnologies, idx: number) => (
-                        <TechnologiesCard key={idx} technology={technology}/>
+                        <TechnologiesCard key={idx} technology={technology} selectedStack={selectedStack} setSelectedStack={setSelectedStack} />
                     ))}
                 </div>
             </div>
 
             {/* right */}
             <div className="grid col-span-3">
-                <SelectedStack technologies={technologies}/>
+                <SelectedStack selectedStack={selectedStack} setSelectedStack={setSelectedStack} />
             </div>
         </div>
     </div>
