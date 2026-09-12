@@ -4,7 +4,7 @@ const navItems = ["Home", "Technologies", "Projects", "About", "Contact"];
 
 const Nav = () => {
   return (
-    <div className="sticky top-0 z-50 bg-white border-b border-gray-100">
+    <div className="sticky top-0 z-50 bg-white border-b border-gray-100 font-jakarta text-sm">
       <div className="flex justify-between items-center max-w-7xl mx-auto py-4 ">
         <img src={Logo} alt="brand-logo" />
 

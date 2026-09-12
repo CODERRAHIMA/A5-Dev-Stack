@@ -5,6 +5,9 @@
     "category": "Frontend",
     "description": "A component-based JavaScript library for building interactive and modern user interfaces.",
     "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
+    "iconColor": "#61DAFB",
+    "badgeBg": "#E8FAFE",
+    "badgeColor": "#087EA4",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -15,6 +18,9 @@
     "category": "Frontend",
     "description": "A React framework for building fast, scalable, and production-ready web applications.",
     "icon": "https://icon.icepanel.io/Technology/svg/Next.js.svg",
+    "iconColor": "#000000",
+    "badgeBg": "#F1F1F1",
+    "badgeColor": "#171717",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Modern"
@@ -25,6 +31,9 @@
     "category": "Frontend",
     "description": "A modern frontend framework that compiles components into highly optimized JavaScript for fast web applications.",
     "icon": "https://icon.icepanel.io/Technology/svg/Svelte.svg",
+    "iconColor": "#FF3E00",
+    "badgeBg": "#FFF0EB",
+    "badgeColor": "#C52D00",
     "rating": 4.7,
     "difficulty": "Intermediate",
     "badge": "Fast"
@@ -35,6 +44,9 @@
     "category": "Backend",
     "description": "A JavaScript runtime that enables developers to build scalable server-side applications.",
     "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
+    "iconColor": "#68A063",
+    "badgeBg": "#EDF7EB",
+    "badgeColor": "#397A3D",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
@@ -45,6 +57,9 @@
     "category": "Backend",
     "description": "A lightweight and flexible Node.js framework for building APIs and web servers.",
     "icon": "https://icon.icepanel.io/Technology/svg/Express.svg",
+    "iconColor": "#000000",
+    "badgeBg": "#F1F1F1",
+    "badgeColor": "#171717",
     "rating": 4.7,
     "difficulty": "Beginner-Friendly",
     "badge": "Fast"
@@ -55,6 +70,9 @@
     "category": "Database",
     "description": "A flexible NoSQL document database designed for scalable and modern applications.",
     "icon": "https://icon.icepanel.io/Technology/svg/MongoDB.svg",
+    "iconColor": "#47A248",
+    "badgeBg": "#ECF8ED",
+    "badgeColor": "#287A2D",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -65,6 +83,9 @@
     "category": "Database",
     "description": "A powerful open-source relational database known for reliability, performance, and advanced SQL features.",
     "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
+    "iconColor": "#4169E1",
+    "badgeBg": "#EDF1FF",
+    "badgeColor": "#2949A8",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Top SQL"
@@ -75,6 +96,9 @@
     "category": "Database",
     "description": "An in-memory data store commonly used for caching, session management, real-time applications, and fast data access.",
     "icon": "https://icon.icepanel.io/Technology/svg/Redis.svg",
+    "iconColor": "#DC382D",
+    "badgeBg": "#FDEDEC",
+    "badgeColor": "#A9231B",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "High Speed"
@@ -85,6 +109,9 @@
     "category": "Language",
     "description": "A versatile programming language used to create dynamic and interactive web applications.",
     "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
+    "iconColor": "#F7DF1E",
+    "badgeBg": "#FFFBE5",
+    "badgeColor": "#8A7300",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
@@ -95,6 +122,9 @@
     "category": "Language",
     "description": "A strongly typed programming language built on JavaScript for developing reliable and scalable applications.",
     "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
+    "iconColor": "#3178C6",
+    "badgeBg": "#EAF3FC",
+    "badgeColor": "#205A99",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Reliable"
@@ -105,6 +135,9 @@
     "category": "Language",
     "description": "A widely used object-oriented programming language for building reliable, scalable, and cross-platform applications.",
     "icon": "https://icon.icepanel.io/Technology/svg/Java.svg",
+    "iconColor": "#ED8B00",
+    "badgeBg": "#FFF4E3",
+    "badgeColor": "#A45E00",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Enterprise"
@@ -115,6 +148,9 @@
     "category": "Styling",
     "description": "A utility-first CSS framework for rapidly building modern and responsive user interfaces.",
     "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
+    "iconColor": "#06B6D4",
+    "badgeBg": "#E6FAFD",
+    "badgeColor": "#087D92",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -125,6 +161,9 @@
     "category": "Styling",
     "description": "A CSS preprocessor that adds powerful features such as variables, nesting, and reusable styles.",
     "icon": "https://icon.icepanel.io/Technology/svg/Sass.svg",
+    "iconColor": "#CC6699",
+    "badgeBg": "#FBEFF5",
+    "badgeColor": "#963F6D",
     "rating": 4.5,
     "difficulty": "Beginner-Friendly",
     "badge": "Classic"
@@ -135,6 +174,9 @@
     "category": "DevOps",
     "description": "A platform for packaging applications and their dependencies into portable containers.",
     "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
+    "iconColor": "#2496ED",
+    "badgeBg": "#EAF5FE",
+    "badgeColor": "#1769A8",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Containers"
@@ -145,6 +187,9 @@
     "category": "Tools",
     "description": "A distributed version control system for tracking code changes and collaborating with developers.",
     "icon": "https://icon.icepanel.io/Technology/svg/Git.svg",
+    "iconColor": "#F05032",
+    "badgeBg": "#FDEEEB",
+    "badgeColor": "#B8321D",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
