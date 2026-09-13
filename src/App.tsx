@@ -23,7 +23,7 @@ function App() {
       </Suspense>
       <Footer />
       
-      <ToastContainer position="bottom-right" className="max-w-[90%]"/>
+      <ToastContainer position="bottom-right"/>
     </>
   );
 }

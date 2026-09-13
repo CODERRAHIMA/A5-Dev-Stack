@@ -21,12 +21,12 @@ const SelectedStack = ({
   if (selectedStack.length === 0) {
     return (
       <div className="flex justify-center md:justify-start items-center md:items-start">
-        <div className="w-[90%] md:w-full border border-gray-200 p-6 rounded-2xl space-y-2 font-jakarta">
+        <div className="w-[90%] md:w-full border-2 md:border border-gray-200 p-6 rounded-2xl space-y-2 font-jakarta">
           <h2 className="font-bold text-xl">Your Stack</h2>
-          <p className="text-[#94A3B8] text-sm">
+          <p className="text-[#94A3B8] text-sm md:text-[11px] xl:text-sm">
             No technologies selected yet.
           </p>
-          <div className="border border-dashed border-gray-300 mt-4 p-6 rounded-2xl text-sm text-[#94A3B8] flex justify-center">
+          <div className="border-2 md:border border-dashed border-gray-300 mt-4 p-6 rounded-2xl text-sm md:text-xs xl:text-sm text-[#94A3B8] flex justify-center">
             Your stack is empty.
           </div>
         </div>
@@ -35,7 +35,7 @@ const SelectedStack = ({
   }
   return (
     <div className="flex justify-center md:justify-start items-center md:items-start">
-      <div className="w-[90%] md:w-full border border-gray-200 p-6 rounded-2xl space-y-2 font-jakarta">
+      <div className="w-[90%] md:w-full border-2 md:border border-gray-200 p-6 rounded-2xl space-y-2 font-jakarta">
         <h2 className="font-bold text-xl">Your Stack</h2>
         <p className="text-[#94A3B8] text-sm">
           {selectedStack.length} Technology Selected
